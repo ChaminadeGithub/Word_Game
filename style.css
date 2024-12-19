@@ -1,0 +1,97 @@
+/* Importation de la police Matrix */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+    font-family: 'Share Tech Mono', monospace; /* Police Matrix */
+    background-color: #000; /* Fond noir Matrix */
+    color: #00ff00; /* Texte vert Matrix */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 3.9em; /* Taille du texte */
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00; /* Effet lumineux */
+}
+
+/* Vidéo de fond */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Place la vidéo derrière le contenu */
+}
+
+h1 {
+    color: #00ff00; /* Texte Matrix */
+    margin-top: 20px;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+    background-color: transparent; /* Pas de fond pour un effet immersif */
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-left: 490px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    width: 1000px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ff00; /* Lumière Matrix autour de la boîte */
+}
+
+.game-info {
+    margin: 20px 0;
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
+
+.word-box {
+    background-color: black;
+    color: #00ff00; /* Texte Matrix */
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.time-box, .score-box {
+    font-size: 55px;
+    margin: 10px 0;
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
+
+.score-box {
+    font-weight: bold; /* Rendre le score en gras */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+button {
+    background-color: black; /* Fond noir */
+    color: #00ff00; /* Texte vert Matrix */
+    border: 1px solid #00ff00; /* Bordure Matrix */
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
+
+button:hover {
+    background-color: #00ff00; /* Inversion de couleur au survol */
+    color: black;
+    text-shadow: none;
+}
