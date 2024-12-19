@@ -1,4 +1,7 @@
- <!DOCTYPE html>
+
+
+
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -59,3 +62,32 @@
             document.getElementById("cover").style.display = "none"; // Cache la couverture
         }
     </script>
+    
+    <div class="container">
+        <h1>WordGame</h1>
+        <div class="game-info">
+            <div class="time-box">
+                Temps restant: <span id="time">0</span> secondes
+            </div>
+            <div class="word-box">
+                <h2 id="word">Ready... ?</h2>
+            </div>
+            <div class="score-box">
+                Score: <span id="score">0</span> points
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="start">START</button>
+            <!-- <button id="prev">Précédent</button> -->
+            <button id="skip">Passer</button>
+            <button id="next">Suivant</button>
+            <!-- Bouton END -->
+            <button onclick="afficherScoreFinal()">END</button>
+        </div>
+       
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
